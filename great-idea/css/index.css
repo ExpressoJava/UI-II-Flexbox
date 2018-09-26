@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -64,3 +64,167 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+nav {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	background: lightgray;
+	padding-bottom: 1%;
+	font-family: 'Spirax', cursive;
+
+}
+
+header {
+	display: inline-block;
+	padding: 0 10% 0 15%;
+	position: relative;
+	bottom: 5%
+}
+
+h1 {
+	font-size: 420%;
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	font-size: 90%;
+}
+
+hr {
+	margin: 3%;
+}
+
+div section {
+	display: inline-block;
+	width: 30%;
+	padding: 5% 0 3% 5%;
+}
+
+h3, section {
+	font-size: 100%;
+}
+
+a {
+	color: black;
+	margin: 0 5%;
+	text-decoration: none;
+}
+
+button {
+	background: white;
+	margin-left: 27%;
+	padding: 2% 10% 2% 10%;
+	color: black;
+	border: 1px solid;
+	font-weight: 450;
+	opacity: 0.6;
+	transition: 0.3s;
+}
+/* mouse over button affect for "Get Started" */
+button:hover {
+	opacity: 90;
+	background-color: darkgray;
+}
+
+.top{
+	display: inline-block;
+	width: 40%;
+	padding: 0 0 3% 5%;
+}
+
+.top-img {
+	display: inline-block;
+    padding: 5% 10% 0 1%;
+}
+
+.middle-img {
+	/* display: block;
+	margin: 0 auto;
+	width: 90% */
+	display: flex;
+	padding-bottom: 1%;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.contact {
+	padding-left: 5%;
+}
+
+body {
+	margin: 0 auto;
+	width: 100%;
+	background-color: lightgray;
+
+}
+.hr {
+	width: 80%
+	height: 5px;
+	margin: auto;
+}
+
+/* services page */
+
+.services-header {
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	width: 80%;
+}
+.services{
+	padding: 2% 7%;
+}
+ h2 {
+	 font-size: 25px;
+ }
+.flex-box {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.boxes {
+	width: 800px;
+	margin: 2%;
+	padding: 2%;
+	border: 1px solid black;
+	border-radius: 6px;
+	line-height: 125%;
+}
+
+.learn-more-bttn {
+	border: 1px solid black;
+	background: white;
+	border-radius: 25px;
+	padding: 1%;
+	margin-top: 2%;
+	width: 30%;
+	display: flex;
+	justify-content: center;
+}
+/* mouse over button effect for "Learn More" */
+.learn-more-bttn:hover {
+	opacity: 90;
+	background-color: darkgray;
+}
+
+.flex-box-fact {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.boxes-two {
+	width: 800px;
+	margin: 2%;
+	padding: 0%;
+	line-height: 125%;
+	border-color: transparent;
+}
+ul {
+	list-style-type: square;
+	margin: 5%;
+	line-height: 130%;
+}
